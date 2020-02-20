@@ -1,0 +1,10 @@
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.exe
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.dll
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.deps.json
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.runtimeconfig.json
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.runtimeconfig.dev.json
+C:\Users\Drew\source\repos\Sockets\bin\Debug\netcoreapp3.1\Sockets.pdb
+C:\Users\Drew\source\repos\Sockets\obj\Debug\netcoreapp3.1\Sockets.AssemblyInfoInputs.cache
+C:\Users\Drew\source\repos\Sockets\obj\Debug\netcoreapp3.1\Sockets.AssemblyInfo.cs
+C:\Users\Drew\source\repos\Sockets\obj\Debug\netcoreapp3.1\Sockets.dll
+C:\Users\Drew\source\repos\Sockets\obj\Debug\netcoreapp3.1\Sockets.pdb
