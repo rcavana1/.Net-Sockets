@@ -25,7 +25,7 @@ namespace Sockets {
         }
         public string RemoteEndpoint {
             get {
-                return listener == null ? string.Empty : listener.RemoteEndPoint.ToString();
+                return sender == null ? string.Empty : sender.RemoteEndPoint.ToString();
             }
         }
         public string LocalEndpoint {
@@ -87,9 +87,9 @@ namespace Sockets {
                 throw new InvalidOperationException(string.Format("Cannot bind to {0} because it is not reserved for this machine.", ip));
             }
             endPoint = new IPEndPoint(addr, PORT);
-            sender = new Socket(addr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            sender.Bind(endPoint);
-            sender.Listen(1);
+            listener = new Socket(addr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            listener.Bind(endPoint);
+            listener.Listen(1);
         }
 
         /// <summary>
@@ -107,7 +107,7 @@ namespace Sockets {
             }
             while (!IsConnected) {
                 // waiting for connection
-                listener = sender.Accept();
+                sender = listener.Accept();
             }
         }
 
@@ -167,9 +167,9 @@ namespace Sockets {
             while (true) {
                 var received = sender.Receive(buffer);
 
-                Message.Concat(Encoding.ASCII.GetString(buffer, 0, received));
+                Message = string.Concat(Message, Encoding.ASCII.GetString(buffer, 0, received));
                 if (Message.EndsWith(END_FLAG)) {
-                    Message.Remove(Message.IndexOf(END_FLAG));
+                    Message = Message.Remove(Message.IndexOf(END_FLAG));
                     break;
                 }
             }
@@ -184,7 +184,6 @@ namespace Sockets {
                 sender.Close();
             }
             if (IsHost) {
-                listener.Shutdown(SocketShutdown.Both);
                 listener.Close();
             }
             Message = string.Empty;

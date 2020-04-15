@@ -46,6 +46,7 @@ namespace Sockets {
                 Console.WriteLine("Press enter to exit...");
                 Console.ReadLine();
             }
+            socket.CloseConnection();
         }
 
         private static void BindIPPrompt() {
