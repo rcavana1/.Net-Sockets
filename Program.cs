@@ -14,6 +14,7 @@ namespace Sockets {
                     Console.WriteLine("Press Ctrl+C to quit.\n");
                     socket = new SocketHelper(true);
                     BindIPPrompt();
+                    Console.WriteLine("Bound to {0}.", socket.LocalEndpoint);
                     Console.WriteLine("Waiting for connection...");
                     socket.WaitForConnection();
                     Console.WriteLine("Connection established! Press Ctrl+C to quit.");

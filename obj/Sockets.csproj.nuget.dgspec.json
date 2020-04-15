@@ -1,18 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Drew\\source\\repos\\.NET-Socket\\Sockets.csproj": {}
+    "C:\\Users\\Drew\\Source\\Repos\\.Net-Sockets\\Sockets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Drew\\source\\repos\\.NET-Socket\\Sockets.csproj": {
+    "C:\\Users\\Drew\\Source\\Repos\\.Net-Sockets\\Sockets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Drew\\source\\repos\\.NET-Socket\\Sockets.csproj",
+        "projectUniqueName": "C:\\Users\\Drew\\Source\\Repos\\.Net-Sockets\\Sockets.csproj",
         "projectName": "Sockets",
-        "projectPath": "C:\\Users\\Drew\\source\\repos\\.NET-Socket\\Sockets.csproj",
+        "projectPath": "C:\\Users\\Drew\\Source\\Repos\\.Net-Sockets\\Sockets.csproj",
         "packagesPath": "C:\\Users\\Drew\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Drew\\source\\repos\\.NET-Socket\\obj\\",
+        "outputPath": "C:\\Users\\Drew\\Source\\Repos\\.Net-Sockets\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Drew\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

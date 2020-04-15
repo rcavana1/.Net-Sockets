@@ -20,7 +20,7 @@ namespace Sockets {
         public bool IsHost { get; private set; }
         public bool IsConnected {
             get {
-                return listener == null ? false : listener.Connected;
+                return sender == null ? false : sender.Connected;
             }
         }
         public string RemoteEndpoint {
